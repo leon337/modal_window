@@ -2,12 +2,148 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fira Code";
 }
 
 html, body{
     height: 100%;
-}
 
+
+}
+/* CONFIGURAÇÃO DO BODY*/
 body{
     background-color: rgb(0, 188, 212);
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid rgb(168, 160, 160);
+    position: relative;
+    
+
+   
+    
 }
+/*CONFIGURAÇÃO DO BOTAO*/
+.botao, .botao_enviar{
+    width:50%;
+    max-width:300px;
+    min-width: 200px;
+    height:60px;
+    border: 3px solid #0288D1;
+    border-radius: 15px;   
+    background-color:white;
+    color:#03A9F4;
+    /*animation-name: example;*/
+    animation-duration: 1s; 
+    box-shadow: -2px 3px 5px #B3E5FC;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer; 
+    text-align: center;
+    line-height: 50px;
+    position: absolute; 
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+    
+   
+    
+    
+}
+
+#botao_principal{
+    /*z-index: 0;
+    position: absolute;
+        top: 200px;*/
+    
+}
+
+/* CONFIGURAÇÃO QUANDO EU PASSAR O MOUSE POR CIMA DO BOTAO*/
+
+/*.botao:hover{
+    animation-name: spin ;
+}
+*/
+.container_do_formulario{
+    width:100%;
+    height:100%;
+    display: none;
+    background-color:rgba(0, 0, 0, 0.397);    
+    padding:2%;
+
+    display:none;
+    
+}
+
+.formulario{
+    width:50%;
+    margin: 25px auto;
+    height:500px;    
+    background-color:#B2EBF2;
+    padding:2.5%;
+    z-index: 1;
+    
+}
+.h1_do_formulario{
+    color: rgb(10, 4, 61);
+    text-align: center;
+    padding-bottom: 30px;
+}
+input{
+    width:100%;
+    height:45px;
+    margin: 25px auto;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border-color: #0288D1;
+}   
+
+input:focus{
+    border-color: #00BCD4;
+    background-color:rgb(209, 209, 209);
+    border:none;
+}
+
+
+#botao_enviar{
+    position: relative;
+    top: 10%;
+    left: 50%;
+}
+#botao_enviar:hover{
+   background-color:#00BCD4;
+   color: white;
+}
+
+.fechar{
+    position: relative;
+    top: 0%;
+    right: -95%;
+    background-color: rgb(238, 99, 99);
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    line-height: 35px;
+    padding-left: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+  
+  @keyframes example {
+    from {background-color:white;}
+    to {background-color: whitesmoke ;}
+  }
+  
+
+  @keyframes spin {
+    50% {
+    transform: rotateY(0deg);
+      }
+     100% {
+    transform: rotateY(360deg);
+     }
+    }
