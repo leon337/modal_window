@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    alert("estou funcionando")
+    
     let botao_principal = (".botao");
     let container_do_formulario = (".container_do_formulario");
     let botao_fechar = (".fechar");

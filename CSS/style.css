@@ -15,7 +15,7 @@ body{
     background-color: rgb(0, 188, 212);
     width: 100vw;
     height: 100vh;
-    border: 5px solid rgb(168, 160, 160);
+    border: 5px solid #0288D1;
     position: relative;
     
 
@@ -120,7 +120,7 @@ input:focus{
     position: relative;
     top: 0%;
     right: -95%;
-    background-color: rgb(238, 99, 99);
+    background-color: rgba(238, 99, 99, 0.644);
     width: 32px;
     height: 32px;
     border-radius: 32px;
@@ -128,9 +128,14 @@ input:focus{
     padding-left: 10px;
     border: none;
     font-weight: bold;
+    cursor: pointer;
+    color: rgb(92, 79, 79);
 }
 
 
+.fechar:hover{
+    background-color:red ;
+}
 
   
   @keyframes example {
